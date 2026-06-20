@@ -1,0 +1,91 @@
+# ==========================================
+# Python Core & Byte-compiled Files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual Environments (Always ignore these)
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Django Specific Files
+# ==========================================
+# Local development database (uncomment if you want to track a seed DB)
+db.sqlite3
+db.sqlite3-journal
+
+# Collected static files and uploaded media files
+static_cdn/
+staticfiles/
+media/
+
+# Django local settings or secrets
+local_settings.py
+.env
+.env.[a-zA-Z]*
+!.env.example
+
+# Django application log files
+*.log
+
+# ==========================================
+# Package Distribution and Build Outputs
+# ==========================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Testing & Code Quality Tools
+# ==========================================
+htmlcov/
+.toml
+.history
+.bak
+.tox/
+.clear/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+
+# ==========================================
+# Common Editors and IDEs (Optional)
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+.DS_Store
