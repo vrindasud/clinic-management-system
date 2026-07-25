@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +45,9 @@ INSTALLED_APPS = [
     'doctor',
     'labtechnician',
     'pharmacist',
-    'receptionist'
+    'receptionist',
+	 'pharmacist',
+
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Customize the Jazzmin Dashboard Interface
+JAZZMIN_SETTINGS = {
+    # This changes the text at the top of the sidebar to fit nicely
+    "site_brand": "CMS Pharmacy",
+    
+    # This changes the title on the browser tab
+    "site_title": "Pharmacy Admin Portal",
+    
+    # Welcome text on the login screen
+    "welcome_sign": "Welcome to the Pharmacy Management System",
+    
+    # Copyright text in the footer
+    "copyright": "Clinic Management System Ltd",
+}

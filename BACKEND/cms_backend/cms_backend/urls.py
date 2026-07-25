@@ -26,5 +26,9 @@ urlpatterns = [
     path('api/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 
     # Feature Module App Includes
+	#vrinda
     path('api/', include('administrator.urls')),
+	#shamsudeen
+	path('', include('pharmacist.urls')),
 ]
+
