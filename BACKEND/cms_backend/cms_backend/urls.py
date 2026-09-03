@@ -30,5 +30,7 @@ urlpatterns = [
     path('api/', include('administrator.urls')),
 	#shamsudeen
 	path('', include('pharmacist.urls')),
+    #abhimanyu
+    path('api/lab/', include('labtechnician.urls')),
 ]
 

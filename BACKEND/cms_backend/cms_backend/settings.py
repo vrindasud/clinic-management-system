@@ -82,11 +82,21 @@ WSGI_APPLICATION = 'cms_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-DATABASES= {'default': {
+'''DATABASES= {'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cms_pro_db',
         'USER': 'root',
         'PASSWORD': '1234',
+        'HOST': 'localhost',
+        'PORT': '3306'
+	}
+}'''
+
+DATABASES= {'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cms_pro_db',
+        'USER': 'root',
+        'PASSWORD': 'admin1234',
         'HOST': 'localhost',
         'PORT': '3306'
 	}
